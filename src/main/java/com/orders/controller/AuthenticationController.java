@@ -18,6 +18,7 @@ import com.orders.entity.JwtResponse;
 import com.orders.util.JwtTokenUtil;
 
 @RestController
+@RequestMapping("/data-publisher/v1")
 public class AuthenticationController {
 
 	@Autowired
