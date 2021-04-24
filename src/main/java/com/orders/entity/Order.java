@@ -1,18 +1,17 @@
-package com.orders.dto;
+package com.orders.entity;
 
-import java.time.LocalDate;
+import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-
-import lombok.Data;
+import java.time.LocalDate;
 
 @Entity
 @Data
 public class Order {
 
 	@Id
-	private int oid;
+	private Long oid;
 	
 	private LocalDate date;
 	

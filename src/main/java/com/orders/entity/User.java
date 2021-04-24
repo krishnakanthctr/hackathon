@@ -1,10 +1,10 @@
-package com.orders.dto;
+package com.orders.entity;
+
+import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
-import lombok.Data;
 
 @Entity
 @Data
@@ -12,7 +12,7 @@ import lombok.Data;
 public class User {
 
 	@Id
-	private int id;
+	private Long id;
 	
 	private String userName;
 	
